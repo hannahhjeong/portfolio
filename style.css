@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: .3px solid black; */
+}
+
+img, video{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --gray: #EFEFEF;
+    --yellow: #FCFFE7;
+}
+
+@font-face {
+    font-family: "fun";
+    src: url("assets/fonts/Barlaxent.otf")
+}
+
+body {
+    font-family: "fun", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: .02em;
+}
+
+h1,
+h2 {
+    font-size: 1em;
+    font-weight: normal;
+}
+
+/* -------------- nav bar  -------------- */
+.top-nav,
+.bottom-nav {
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+}
+
+.top-nav {
+    top: 0px;
+}
+
+.bottom-nav {
+    bottom: 0px;
+}
+
+.nav-link,
+.dropdown {
+    width: 30vw;
+    flex: 1;
+}
+
+.nav-link {
+    padding-left: 20px;
+}
+
+#home-nav-link {
+    background-color: var(--yellow);
+}
+
+#project-number,
+#nav-3,
+#nav-4,
+#nav-6 {
+    background-color: white;
+}
+
+#nav-2,
+#nav-5 {
+    background-color: var(--gray)
+}
+
+.dropdown {
+    display: flex;
+    flex-direction: row;
+}
+
+.dropdown-content-1 {
+    background-color: rgba(237, 237, 237, .8);
+    width: 34.5vw;
+    left: 0px;
+}
+
+.dropdown-content-2 {
+    background-color: rgba(255, 255, 255, .8);
+    width: 100vw;
+}
+
+.dropdown-content-1,
+.dropdown-content-2 {
+    display: none;
+    opacity: 0;
+}
+
+.dropdown-content-1.active,
+.dropdown-content-2.active {
+    display: flex;
+    opacity: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    z-index: -1;
+    height: 97vh;
+    padding-top: 40px;
+}
+
+.dropdown-text {
+    width: 30vw;
+    padding-left: 20px;
+}
+
+p,
+a {
+    padding: 5px 0px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline
+}
+
+#profile-img {
+    width: 15vw;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+
+/*------------- sandbox ------------- */
+
+.body-text {
+    padding-top: 70px;
+    padding-left: 20px;
+}
+
+/*------------- portfolio grid ------------- */
+
+.grid {
+    columns: 3 400px;
+    gap: 30px;
+}
+.grid-item {
+    padding-top: 30px;
+}
+
+#portfolio {
+    margin: 20px;
+}
+
+.grid a {
+    text-decoration: none;
+}
+
+#portfolio ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    transition: color .1s ease;
+
+}
+
+#portfolio a:hover ul {
+    color: black;
+}
+
+#portfolio video {
+    border-radius: 10px;
+    width: 100vw
+}
+/*------------- project 1 - dark mode ------------- */
+.black-bg {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -999;
+}
+
+.project-container {
+    width: 100%;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.project-container img, .project-container video{
+    padding-top: 7px;
+    width: 60vw;
+}
+
+iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50px;
+    padding-right: 40px;
+} 
+.iframe-container {
+    width: 100%;
+    height: 100%;
+}
+.white-text {
+    color: white;
+    
+}
+.text-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 40px;
+}
+.text-container h2 {
+    font-size: 2em;
+}
+.project-text {
+    width: 30vw;
+    padding-right: 10px;
+}
+#project-number {
+    transition: opacity 0.5s ease;
+}
