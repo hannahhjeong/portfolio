@@ -205,7 +205,9 @@ a:hover {
     padding-top: 7px;
     width: 60vw;
 }
-
+#full-screen {
+    width: 90%;
+}
 iframe {
     position: absolute;
     width: 100%;
