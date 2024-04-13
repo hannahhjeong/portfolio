@@ -30,17 +30,17 @@ document.addEventListener('DOMContentLoaded', function () {
             projectNumber.textContent = originalProjectNumberText;
         }
     });
+});
 
-    // Changing bio text DOESN'T WORK
-    const texts = [
-        "Graphic designer at RISD. (more)",
-        "Exploring the world of design.",
-        "Passionate about visual storytelling.",
-        "Creating meaningful brand experiences."
-    ];
-    const navLink = document.getElementById("nav-2");
-    navLink.addEventListener("mouseenter", function() {
-        const randomIndex = Math.floor(Math.random() * texts.length);
-        navLink.textContent = texts[randomIndex];
-    });
+// Changing bio text
+const texts = [
+    "Graphic designer at RISD. (more)",
+    "Exploring the world of design.",
+    "Passionate about visual storytelling.",
+    "Creating meaningful brand experiences."
+];
+const navLink = document.getElementById("nav-2");
+navLink.addEventListener("mouseenter", function() {
+    const randomIndex = Math.floor(Math.random() * texts.length);
+    navLink.textContent = texts[randomIndex];
 });
