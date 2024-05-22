@@ -35,9 +35,9 @@ document.addEventListener('DOMContentLoaded', function () {
 // Changing bio text
 const texts = [
     "Graphic designer at RISD. (more)",
-    "another thing about me",
-    "another another thing about me",
-    "another another another thing about me"
+    "Exploring the world of design.",
+    "Passionate about visual storytelling.",
+    "Creating meaningful brand experiences."
 ];
 const navLink = document.getElementById("nav-2");
 navLink.addEventListener("mouseenter", function() {
