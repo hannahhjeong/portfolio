@@ -25,7 +25,7 @@ body {
     font-family: "fun", sans-serif;
     font-style: light;
     line-height: 1.2;
-    font-size: smaller;
+    /* font-size: smaller; */
 }
 /* -------------- nav bar  -------------- */
 .top-nav,
@@ -91,6 +91,7 @@ body {
 .dropdown-text {
     width: 30vw;
     padding-left: 20px;
+    padding-top:20px;
     animation-name: drop;
 }
 @keyframes drop {
@@ -145,10 +146,15 @@ a:hover {
     list-style: none;
     display: flex;
     justify-content: space-between;
+
 }
 .flex-item:hover p{
     animation: blink .5s infinite;
     transition: ease;
+}
+
+.flex-item a:hover {
+    text-decoration: none;
 }
 /*------------- grid ------------- */
 .grid {
@@ -171,7 +177,7 @@ a:hover {
 .grid-item:hover video:hover,
 .middle-flex-item:hover img:hover{
     filter: drop-shadow(0 0 4rem white);
-    transform: rotate(1deg);
+    /* transform: rotate(1deg); */
 }
 #portfolio {
     margin: 15px;
@@ -215,7 +221,7 @@ a:hover {
 }
 .project-container img, .project-container video{
     width: 100vw;
-    aspect-ratio: 16/10;
+    aspect-ratio: 16/9;
     object-fit: cover;
 }
 #full-screen {
@@ -237,6 +243,7 @@ iframe {
     justify-content: space-between;
     width: 100%;
     padding: 30px;
+    z-index: 99;
 }
 .text-container h2 {
     font-size: 2em;

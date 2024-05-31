@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (dropdownContent1.classList.contains('active') || dropdownContent2.classList.contains('active')) {
             dropdownContent1.classList.remove('active');
             dropdownContent2.classList.remove('active');
-            aboutLink.innerHTML = 'Graphic designer at RISD. (more)';
+            aboutLink.innerHTML = 'Graphic design and such at RISD. (more)';
         } else {
             dropdownContent1.classList.add('active');
             dropdownContent2.classList.add('active');
